@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Formulário de Contato--</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    body {
+      background-color:honeydew
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Entre em Contato</h1></center>
+    <center>
+      <div>
+        <form name="meu_form">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome">
+              </div>
+              <div class="mb-3">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@exemplo.com">
+              </div>
+        </form>
+        <input type="submit" class="btn btn-primary" onclick="Enviar();" value="Enviar"/>
+        
+    </div>
+  </center>
+</body>
+<script>
+function Enviar() {
+  var nome = document.getElementById("nome");
+  if (nome.value != "") {
+    alert('Obrigado Sr(a)' + nome.value + sobrenome.value + email.value + ' seus dados foram encaminhados com sucesso');
+    
+  }
+}
+</script>
+</html>
